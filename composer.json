@@ -1,0 +1,79 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": "^7.1.3",
+    "fideloper/proxy": "^4.0",
+    "laravel/framework": "5.6.*",
+    "laravel/tinker": "^1.0",
+    "danog/primemodule": "^1.0.3",
+    "danog/magicalserializer": "^1.0",
+    "phpseclib/phpseclib": "dev-master#27370df",
+    "vlucas/phpdotenv": "^2.4",
+    "erusev/parsedown": "^1.6",
+    "rollbar/rollbar": "dev-master",
+    "ext-curl": "*",
+    "ext-xml": "*"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.0",
+    "fzaninotto/faker": "^1.4",
+    "mockery/mockery": "^1.0",
+    "nunomaduro/collision": "^2.0",
+    "phpunit/phpunit": "^7.0",
+    "phpdocumentor/reflection-docblock": "^3.1"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds",
+      "database/factories"
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "danog\\MadelineProto\\": "app/"
+    },
+    "files": [
+      "app/BigIntegor.php",
+      "app/Socket.php",
+      "app/Collectable.php",
+      "app/Threaded.php",
+      "app/Volatile.php",
+      "app/Thread.php",
+      "app/Worker.php",
+      "app/Pool.php",
+      "app/HttpProxy.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ]
+    }
+  },
+  "scripts": {
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
